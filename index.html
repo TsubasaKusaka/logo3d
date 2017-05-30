@@ -9,10 +9,36 @@
   <body>
     <a-scene>
       <a-assets>
-        <a-asset-item id="crate-obj" src="models/logo_synchrofood.obj"></a-asset-item>
+        <a-asset-item
+          id="synchro-logo"
+          src="models/logo_synchrofood.obj">
+        </a-asset-item>
       </a-assets>
-      <a-obj-model src="#crate-obj"></a-obj-model>
-      <a-sky color="#ECECEC"></a-sky>
+
+      <a-light
+        type="directional"
+        color="#FFF"
+        intensity="0.5"
+        position="0 1 2">
+      </a-light>
+      <a-light
+        type="ambient"
+        color="#FFF">
+      </a-light>
+
+      <a-obj-model src="#synchro-logo" position="0 1 -20" material="color: #003b5d;">
+        <a-animation
+          attribute="rotation"
+          dur="10000"
+          fill="forwards"
+          to="0 360 0"
+          repeat="indefinite">
+        </a-animation>
+      </a-obj-model>
+
+      <a-sky color="#FFF"></a-sky>
+
+      <!-- <script src="js/index.js"></script> -->
     </a-scene>
   </body>
 </html>
