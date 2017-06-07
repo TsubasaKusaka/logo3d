@@ -1,6 +1,10 @@
-chat:
-  build: .
-  command: echo 'ready'
-  volumes:
-    - .:/home/app/chat
-    - /home/app/chat/node_modules
+version: "2"
+services:
+  node:
+    build: .
+    command: npm start
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
