@@ -1,0 +1,6 @@
+chat:
+  build: .
+  command: echo 'ready'
+  volumes:
+    - .:/home/app/chat
+    - /home/app/chat/node_modules
