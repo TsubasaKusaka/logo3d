@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Synchro Food Logo</title>
-    <meta name="description" content="Synchro Food Logo">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -20,11 +18,9 @@
         color="#FFF"
         intensity="0.5"
         position="0 1 2">
-      </a-light>
       <a-light
         type="ambient"
         color="#FFF">
-      </a-light>
 
       <a-obj-model src="#synchro-logo" position="0 1 -20" material="color: #003b5d;">
         <a-animation
@@ -36,9 +32,9 @@
         </a-animation>
       </a-obj-model>
 
-      <a-sky color="#FFF"></a-sky>
+      <a-sky color="#FFF">
 
-      <!-- <script src="js/index.js"></script> -->
+       <!-- <script src="js/index.js"></script> -->
     </a-scene>
   </body>
 </html>
